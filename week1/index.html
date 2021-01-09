@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 1</title>
     <link rel = "stylesheet" href = "css/style1.css">
+    <script src = "js/script1.js"></script>
 </head>
 <body>
     <main>
@@ -15,7 +16,11 @@
             <h2>Week 1</h2>
             <ul>
                 <li>
-                    I have no notes from this reading.
+                    It is neat to know that JavaScript has a built in storge system where
+                    the user can store data on their computer via the web browers but I feel
+                    there is a lot of limits to what can be done with the localStorage when
+                    compared to what a database server can do. There is some uses though where
+                    it can be useful so it is good to know how to access it.
                     <h3>Questions:</h3>
                     <ol>
                         <li>
@@ -34,6 +39,17 @@
                     </ol>
                 </li>
             </ul>
+        </section>
+        <section>
+            <h3>Week 1 Assignment - Story Writer</h3>
+            Story Name: <input id = "name_input">
+            <div>
+                <button onclick = "loadStory()">Find and Edit it</button>
+                <button onclick = "saveStory()">Save it</button>
+                <button onclick = "displayStory()">Display it</button>
+            </div>
+            <textarea id = "story_editor" placeholder = "Write a story here."></textarea>
+            <div id = "story_display"></div>
         </section>
     </main>
 </body>
