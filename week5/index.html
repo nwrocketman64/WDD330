@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4</title>
     <link rel = "stylesheet" href = "css/style1.css">
+    <style>
+        img {
+            max-width: 100%;
+        }
+        #hikeTitle {
+            max-width: 100%;
+            font-size: 2.5em;
+            text-align: center;
+            padding: 20px;
+            border: 3px solid black;
+        }
+        .hikeStyles {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .hikeStyles h2 {
+            text-align: center;
+            border: 3px solid black;
+            grid-column: 1 / 3;
+        }
+        .image {
+            display: inline;
+        }
+        .hikeStyles li {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .hikeStyles h3 {
+            text-align: center;
+        }
+        .hikeStyles p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -101,9 +136,6 @@
         <section>
             <h2>Exercises</h2>
             <h3>Chapter 10 - JavaScript: Novice to Ninja</h3>
-        </section>
-        <section>
-            <h2>Team Activity</h2>
             <div class = "dojo">
                 <div class = "quiz-body">
                     <h4>Quiz Ninja!</h4>
@@ -124,7 +156,15 @@
                 </div>
             </div>
         </section>
+        <section>
+            <h2>Team Activity</h2>
+            <h3 id = "hikeTitle">Great hikes</h3>
+            <ul id="hikes" class="hikeStyles">
+                <!-- your hike list should be build here. -->
+            </ul>
+        </section>
     </main>
     <script src = "js/script1.js"></script>
+    <script src = "js/script2.js"></script>
 </body>
 </html>
