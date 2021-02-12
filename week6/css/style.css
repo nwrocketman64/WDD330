@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: inline;
+    width: 25px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+footer {
+    font-size: 0.7em;
+}
+
+.page {
+    max-width: 300px;
+    border: solid red 3px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #EEE;
+}
+
+#main-list {
+    border: black solid 1px;
+    margin: 10px;
+}
+
+#main-input {
+    padding: 10px;
+}
+
+#control {
+    display: grid;
+    grid-template-columns: 35% 20% 1fr 1fr;
+    font-size: 0.8em;
+    padding: 3px;
+    text-align: center;
+}
+
+.todo-item, .done-item {
+    display: grid;
+    grid-template-columns: 1fr 75% 1fr;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: black solid 1px;
+}
+
+.done-item {
+    text-decoration: line-through;
+}
+
+.selected {
+    border: black solid 1px;
+}
+
+.message {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: black solid 1px;
+}
