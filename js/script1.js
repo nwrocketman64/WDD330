@@ -36,6 +36,12 @@ window.addEventListener('load', (event)=>{
                 label: "Week 6 Todo App",
                 url: "week6/index.html"
             }
+        ],
+        [
+            {
+                label: "Week 7 Notes",
+                url: "week7/index.html"
+            }
         ]
     ];
 
