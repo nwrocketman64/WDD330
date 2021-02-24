@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8</title>
+    <link rel = "stylesheet" href = "css/style1.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 330 Portfolio: Nathan Webb - Week 8</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Notes</h2>
+            <h3>Chapter 8 - HTML5 and CSS3 for the Real World</h3>
+            <ul>
+                <li>
+                    You can edit an element's appearance using transform
+                    functions.
+                </li>
+                <li>
+                    Translation functions allow you to move elements left,
+                    right, up, or down.
+                </li>
+                <li>
+                    When you employ a translation function, you’re moving
+                    elements without impacting the flow of the document.
+                </li>
+                <li>
+                    If you only want to move an element vertically or
+                    horizontally, you can use the translatex or translatey
+                    functions respectively.
+                </li>
+                <li>
+                    Transforms don’t work on inline elements.
+                </li>
+                <li>
+                    The scale(x,y) function scales an element by the
+                    defined factors horizontally then vertically. If only
+                    one value is provided, it will be used for both the x
+                    and y values, growing or shrinking your element while
+                    maintaining the original aspect ratio.
+                </li>
+                <li>
+                    A scaled element will grow outwards from or shrink
+                    inwards towards its center.
+                </li>
+                <li>
+                    The rotate() function rotates an element around the
+                    point of origin by a specified angle value.
+                </li>
+                <li>
+                    Generally, angles are declared in degrees, with
+                    positive degrees moving clockwise and negative moving
+                    counterclockwise. In addition to degrees, values can
+                    be provided in grads, radians, or turns.
+                </li>
+                <li>
+                    The skew(x,y) function specifies a skew along the x
+                    and y axes.
+                </li>
+                <li>
+                    As with translate and scale, there are axis-specific
+                    versions of the skew transform: skewX() and skewY().
+                </li>
+                <li>
+                    Native CSS transitions generally require less
+                    client-side processing, so they’ll usually appear
+                    smoother.
+                </li>
+                <li>
+                    With the CSS transition, property the color transition
+                    can be gradual.
+                </li>
+                <li>
+                    We can animate any of the transforms we’ve just seen,
+                    so that our pages feel more dynamic.
+                </li>
+                <li>
+                    The transition-property property defines the CSS
+                    properties of the element that should be transitioned,
+                    with all for all properties being the default.
+                </li>
+                <li>
+                    The transition-duration property sets how long the
+                    transition will take: the duration of time it takes
+                    to go from the default state to the transitioned
+                    state.
+                </li>
+                <li>
+                    200ms is generally considered the optimum time for a
+                    transition.
+                </li>
+                <li>
+                    The transition-timing-function lets you control the
+                    pace of the transition in even more granular detail.
+                </li>
+                <li>
+                    Using the transition-delay property, it’s possible to
+                    introduce a delay before the transition begins.
+                </li>
+                <li>
+                    The transition property is shorthand for the four
+                    transition properties.
+                </li>
+                <li>
+                    The transition properties allow for multiple
+                    transitions in one call.
+                </li>
+                <li>
+                    CSS animations, unlike transitions, allow you to
+                    control each step of an animation via keyframes.
+                </li>
+                <li>
+                    The animation-duration property defines the length
+                    of time an animation takes to complete one iteration.
+                </li>
+                <li>
+                    The animation-timing-function determines how the
+                    animation will progress over its duration.
+                </li>
+                <li>
+                    The animation-iteration-count property lets you
+                    define how many times the animation will play through.
+                </li>
+                <li>
+                    The animation-delay property is used to define how
+                    many milliseconds or seconds to wait before the
+                    browser begins the animation.
+                </li>
+                <li>
+                    The animation-fill-mode property defines what happens
+                    before the first animation iteration begins and after
+                    the last animation iteration concludes.
+                </li>
+                <li>
+                    The animation-play-state property defines whether
+                    the animation is running or paused.
+                </li>
+                <li>
+                    The animation property takes as its value a
+                    space-separated list of values for the longhand
+                    animation-name, animation-duration,
+                    animation-timing-function, animation-delay,
+                    animation-iteration-count, animation-direction,
+                    animation-fill-mode, and animation-play-state
+                    properties.
+                </li>
+            </ul>
+            <h3>Chapter 12 - HTML5 and CSS3 for the Real World</h3>
+            <ul>
+                <li>
+                    All drawing on the canvas happens via the
+                    Canvas JavaScript API.
+                </li>
+                <li>
+                    The context is the place where your drawing is
+                    rendered.
+                </li>
+                <li>
+                    createPattern takes two parameters: the image
+                    to create the pattern with, and how that image
+                    should be repeated.
+                </li>
+                <li>
+                    An arc is a segment of a circle, but as there’s no
+                    method for creating a circle, we can draw a 360°
+                    arc. We create it using the arc method.
+                </li>
+                <li>
+                    We can use the API’s toDataURL method to save our
+                    drawing.
+                </li>
+                <li>
+                    Once we’ve drawn an image on the canvas, we can
+                    use the getImageData method from the Canvas API to
+                    manipulate the pixels of that image.
+                </li>
+                <li>
+                    Data contains information about the pixels in the
+                    ImageData object in the form of an array. Each
+                    pixel on the canvas will have four values in the
+                    data array, which correspond to that pixel’s R, G,
+                    B, and A values.
+                </li>
+                <li>
+                    A major downside of canvas in its current form is
+                    its lack of accessibility. The canvas doesn’t
+                    create a DOM node, is not a text-based format, and
+                    is thus essentially invisible to tools such as
+                    screen readers.
+                </li>
+                <li>
+                    Unlike canvas, images created with SVG are available
+                    via the DOM.
+                </li>
+                <li>
+                    the Drag and Drop API. This API allows us to specify
+                    that certain elements are draggable, and then
+                    specify what should happen when these draggable
+                    elements are dragged over or dropped onto other
+                    elements on the page.
+                </li>
+                <li>
+                    Note that draggable is not a Boolean attribute,
+                    so you have to explicitly set it to true.
+                </li>
+                <li>
+                    DataTransfer objects are one type of object
+                    outlined in the Drag and Drop API. These objects
+                    allow us to set and get data about the elements
+                    that are being dragged.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
