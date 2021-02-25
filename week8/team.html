@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity - Week 8</title>
+    <link rel = "stylesheet" href = "css/style1.css">
+</head>
+<body>
+    <div class = "page">
+        <header>
+            <h1>Team Activity - Week 8</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Star Wars API</h2>
+                <div id = "peopleList"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2021</p>
+        </footer>
+    </div>
+    <script>
+        // The api's url
+        const apiUrl = "https://swapi.dev/api/people";
+        let count = 1;
+        getData(apiUrl);
+
+        // The function for calling the api.
+        function getData(api){
+            fetch(api)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (jsonObject) {
+                // Loop through the list and print the data.
+                for (let i = 0; i < jsonObject.results.length; i++){
+                    // Create a list object.
+                    let item = document.createElement("p");
+                    let list = document.createElement("ul");
+                    let height = document.createElement("li");
+                    let weight = document.createElement("li");
+                    let gender = document.createElement("li");
+
+                    // Append the persons data to the object.
+                    item.textContent = count + ". " + jsonObject.results[i].name;
+
+                    // Add to count.
+                    count = count + 1;
+
+                    // Create list items.
+                    height.textContent = "Height: " + jsonObject.results[i].height;
+                    weight.textContent = "Weight: " + jsonObject.results[i].mass;
+                    gender.textContent = "Gender: " + jsonObject.results[i].gender;
+
+                    // Append the list items.
+                    list.appendChild(height);
+                    list.appendChild(weight);
+                    list.appendChild(gender);
+
+                    // Append the list to the object.
+                    item.appendChild(list);
+
+                    // Append the objects to the list on the page.
+                    document.getElementById("peopleList").appendChild(item);
+                };
+
+                // Go to the next page.
+                if (jsonObject.next == null){
+                    return;
+                } else {
+                    getData(jsonObject.next);
+                };
+            });
+        };
+    </script>
+</body>
+</html>
