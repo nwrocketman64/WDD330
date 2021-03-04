@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8</title>
+    <link rel = "stylesheet" href = "css/style1.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 330 Portfolio: Nathan Webb - Week 8</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Notes</h2>
+            <h3>Chapter 9: JavaScript: Novice to Ninja</h3>
+            <ul>
+                <li>
+                    Every JavaScript environment has a global object. Any
+                    variables that are created in the global scope are actually
+                    properties of this object, and any functions are methods of it.
+                </li>
+                <li>
+                    In a browser environment the global object is the window object,
+                    which represents the browser window that contains a web page.
+                </li>
+                <li>
+                    The Browser Object Model is a collection of properties and methods
+                    that contain information about the browser and computer screen.
+                </li>
+                <li>
+                    Every browser window, tab, popup, frame, and iframe has a window
+                    object.
+                </li>
+                <li>
+                    In general, you should refer to global variables without using the
+                    window object.
+                </li>
+                <li>
+                    The window object has a number of properties and methods that provide
+                    information about the user’s browser.
+                </li>
+                <li>
+                    The Navigator object contains information about the browser being
+                    used. Its userAgent property will return information about the
+                    browser and operating system being used.
+                </li>
+                <li>
+                    The window.location property is an object that contains information
+                    about the URL of the current page.
+                </li>
+                <li>
+                    The pathname property returns a string of the path that follows the domain.
+                </li>
+                <li>
+                    The search property returns a string that starts with a '?' followed by the
+                    query string parameters. It returns an empty string if there are no
+                    query string parameters.
+                </li>
+                <li>
+                    The origin property returns a string that shows the protocol and domain
+                    where the current page originated from.
+                </li>
+                <li>
+                    The reload() method can be used to force a reload of the current page.
+                    If it’s given a parameter of true, it will force the browser to reload
+                    the page from the server, instead of using a cached page.
+                </li>
+                <li>
+                    The assign() method can be used to load another resource from a URL
+                    provided as a parameter.
+                </li>
+                <li>
+                    The toString() method returns a string containing the whole URL.
+                </li>
+                <li>
+                    The window.history property can be used to access information about
+                    any previously visited pages in the current browser session.
+                </li>
+                <li>
+                    The window.history.length property shows how many pages have been
+                    visited before arriving at the current page.
+                </li>
+                <li>
+                    The window.history.go() method can be used to go to a specific page,
+                    where 0 is the current page.
+                </li>
+                <li>
+                    A new window can be opened using the window.open() method.
+                </li>
+                <li>
+                    The close() method can be used to close a window
+                </li>
+                <li>
+                    The window.screen object contains information about the screen the
+                    browser is displayed on.
+                </li>
+                <li>
+                    The availHeight and availWidth can be used to find the height and
+                    width of the screen.
+                </li>
+                <li>
+                    The write() method simply writes a string of text to the page.
+                </li>
+                <li>
+                    Cookies are small files that are saved locally on a user’s computer.
+                </li>
+                <li>
+                    Cookies take the form of a text file that contain a list of name/value
+                    pairs separated by semicolons.
+                </li>
+                <li>
+                    Adding the string '; secure' to the end of a cookie will ensure it’s
+                    only transmitted over a secure HTTPS network.
+                </li>
+                <li>
+                    The window.setTimeout() method accepts a callback to a function as its
+                    firstparameter and a number of milliseconds as its second parameter.
+                </li>
+            </ul>
+            <h3>Chapter 14: JavaScript: Novice to Ninja</h3>
+            <ul>
+                <li>
+                    The data- attribute is a way of embedding data in a web page using
+                    custom attributes that are ignored by the browser.
+                </li>
+                <li>
+                    The restriction of only using a string value can be overcome by
+                    encoding any JavaScript object or value as a JSON string, then
+                    performing type-conversion later, as required.
+                </li>
+                <li>
+                    The Web Storage API provides a key-value store on the client’s
+                    computer that is similar to using cookies but has fewer
+                    restrictions, more storage capacity, and is generally easier to use.
+                </li>
+                <li>
+                    The Geolocation API is used to obtain the geographical position of
+                    the device.
+                </li>
+                <li>
+                    If geolocation is available, it will be a property of the navigator
+                    object.
+                </li>
+                <li>
+                    position.speed property returns the ground speed of the device in
+                    meters per second.
+                </li>
+                <li>
+                    position.altitude property returns an estimate of the device’s
+                    altitude.
+                </li>
+                <li>
+                    position.heading property returns the direction the device is
+                    moving in. This is measured as a bearing in degrees, clockwise from
+                    North.
+                </li>
+                <li>
+                    position.timestamp property returns the time that the position
+                    information was recorded.
+                </li>
+                <li>
+                    Web workers allow processes to be run in the background, adding
+                    support for concurrency in JavaScript.
+                </li>
+                <li>
+                    Websocket is a new protocol that allows two-way communication with a
+                    server – also known as push messaging.
+                </li>
+                <li>
+                    The Notification API allows you to show messages using the system’s
+                    notifications.
+                </li>
+                <li>
+                    Before you can send notifications, you need to get permission granted
+                    by the user. This can be achieved using the requestPermission() method
+                    of a Notification global object.
+                </li>
+                <li>
+                    Use the Media API for controlling the playback of the clips using
+                    JavaScript.
+                </li>
+                <li>
+                    The play() method will start the clip playing from its current position.
+                </li>
+                <li>
+                    The pause() method will pause the clip at its current position.
+                </li>
+                <li>
+                    The volume property is a number that can be used to set the audio volume.
+                </li>
+                <li>
+                    The muted property is a boolean value that can be used to mute the audio.
+                </li>
+                <li>
+                    The currentTime property is a number value that can be used to jump to
+                    another part of the clip.
+                </li>
+                <li>
+                    The playbackRate property is used to fast-forward or rewind the clip by
+                    changing its value. A value of 1 is playback at normal speed.
+                </li>
+                <li>
+                    The loop property is a boolean value that can be set to true to make the
+                    clip repeat in a loop.
+                </li>
+                <li>
+                    The duration property can be used to see how long the clip lasts.
+                </li>
+                <li>
+                    The play event, which fires when the clip starts and when it resumes after
+                    a pause.
+                </li>
+                <li>
+                    The pause event, which fires when the clip is paused.
+                </li>
+                <li>
+                    The volumechange event, which fires when the volume is changed.
+                </li>
+                <li>
+                    The loadedmetadata event, which fires when all the video’s metadata has
+                    loaded.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
