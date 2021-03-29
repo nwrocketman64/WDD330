@@ -60,6 +60,12 @@ window.addEventListener('load', (event)=>{
                 label: "Week 10 Notes",
                 url: "week10/index.html"
             }
+        ],
+        [
+            {
+                label: "Final Project",
+                url: "final-project/index.html"
+            }
         ]
     ];
 

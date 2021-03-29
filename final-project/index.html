@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fancy Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <link rel = "stylesheet" href = "css/style1.css">
+    <link rel = "shortcut icon" href = "img/favicon.ico">
+    <script src = "js/script.js"></script>
+</head>
+<body>
+    <div class = "page">
+        <header>
+            <a href = "index.html"><img src = "img/icon-tmb.png" alt = "Icon" /></a>
+            <h1>The Fancy Weather App</h1>
+            <p>All the weather close by</p>
+        </header>
+        <main>
+            <h2 id = "townName">Preston, Idaho</h2>
+            <div class = "heroBanner">
+                <img id = "hBanner" src = "img/mist.jpg" alt = "Hero Banner" />
+                <div class = "current">
+                    <h3>Current Weather</h3>
+                    <div id = "label">
+                        Currently:<br>
+                        Temperature:<br>
+                        High:<br>
+                        Low:<br>
+                        Wind Chill:<br>
+                        Humidity:<br>
+                        Wind Speed:<br>
+                    </div>
+                    <div id = "info">
+                        <span id = "currCond">Sunny</span><br>
+                        <span id = "currentTemp">50</span><br>
+                        <span id = "highTemp"></span><br>
+                        <span id = "lowTemp"></span><br>
+                        <span id = "windChill"></span><br>
+                        <span id = "humidity"></span>%<br>
+                        <span id = "windSpeed">4</span><br>
+                    </div>
+                </div>
+            </div>
+            <div id = "forcast">
+                <h3>5 Day Forcast</h3>
+                <div class = "forcastTable">
+                    <p id = "label1">Mon</p>
+                    <p id = "label2">Tue</p>
+                    <p id = "label3">Wed</p>
+                    <p id = "label4">Thu</p>
+                    <p id = "label5">Fri</p>
+                    <p>
+                        <img id = "img1" src = "img/partly-sunny.png" alt = "Partly Sunny" />
+                        <br><span id = "output1">74</span>
+                    </p>
+                    <p>
+                        <img id = "img2" src = "img/partly-sunny.png" alt = "Partly Sunny" />
+                        <br><span id = "output2">74</span>
+                    </p>
+                    <p>
+                        <img id = "img3" src = "img/partly-sunny.png" alt = "Partly Sunny" />
+                        <br><span id = "output3">74</span>
+                    </p>
+                    <p>
+                        <img id = "img4" src = "img/partly-sunny.png" alt = "Partly Sunny" />
+                        <br><span id = "output4">74</span>
+                    </p>
+                    <p>
+                        <img id = "img5" src = "img/partly-sunny.png" alt = "Partly Sunny" />
+                        <br><span id = "output5">74</span>
+                    </p>
+                </div>
+            </div>
+            <div id = "controls">
+                <button id = "convertValues" onclick="computeMetric()">Convert to Metric</button>
+                <button id = "showForcast" onclick="toggleForcast()">Show Forcast</button>
+                <button id = "refresh" onclick="refresh()">Refresh</button>
+            </div>
+            <div class = "event">
+                <h3>Instructions</h3>
+                <p>
+                    In order for this app to work, you need to have location turned on in your
+                    web browser. If your location does not appear, please refresh the page. Click
+                    on the button to toggle between metric and imperial.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p class = "legal">&copy; <span id = "copyrightyear"></span> | The Fancy Weather App | Rexburg, Idaho | Nathan D. Webb</p>
+            <p>The weather information is provided by <a href = "https://openweathermap.org/">OpenWeatherMap.org</a></p>
+            <p class = "highlight"><span id = "lastupdated"></span></p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Poppins', 'Roboto']
+            }
+        });
+    </script>
+</body>
+</html>
